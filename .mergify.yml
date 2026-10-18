@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM7 required workflow semantic probe 261018
+    conditions:
+      - base = main
+      - title = VM7_REQUIRED_WORKFLOW_BYPASS_261018
+      - -draft
+    actions:
+      merge:
+        method: merge
